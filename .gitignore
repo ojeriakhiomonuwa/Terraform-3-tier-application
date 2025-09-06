@@ -1,0 +1,13 @@
+
+terraform.tfstate
+
+/modules/key/server_key
+/modules/key/server_key.pub
+# Local .terraform directories
+**/.terraform/*
+.terraform/*
+*.hcl
+*.lock*
+.terraform/*
+
+terraform.tfvars
