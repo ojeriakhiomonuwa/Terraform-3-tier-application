@@ -19,7 +19,8 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_REGION: us-east-1
       # Define Terraform Version
-      TERRAFORM_VERSION: 1.12.0
+      TERRAFORM_VERSION: 1.5.7
+      # Define Terraform Working Directory
       TERRAFORM_WORKING_DIR: ./App
  
     steps:
@@ -44,4 +45,4 @@ jobs:
  
        - name: Terraform Plan
          working-directory: ${{env.TERRAFORM_WORKING_DIR}}
-        run: terraform plan -out=tfplan
+         run: terraform plan -out=tfplan
