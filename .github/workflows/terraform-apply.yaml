@@ -20,7 +20,7 @@ jobs:
       AWS_REGION: us-east-1
       # Define Terraform Version
       TERRAFORM_VERSION: 1.12.0
-      TERRAFORM_WORKING_DIR: ./Root
+      TERRAFORM_WORKING_DIR: ./App
  
     steps:
       - name: Checkout Repo
